@@ -7,7 +7,8 @@ import camera
 def run_main_loop(video_capture):
     empty_duration = 60  # Duration in seconds to consider it as "empty" #
     start_time = time.time()
-    frame_delay = 1 / 5  # Delay to achieve 5 frames per second (FPS)
+    fps = 5 # Edit this to select framerate
+    frame_delay = 1/fps # Delay to achieve specified frames per second (FPS)
 
     while True:
         # Read the current frame from the video capture #
