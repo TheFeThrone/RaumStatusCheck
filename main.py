@@ -4,13 +4,13 @@ import loop
 
 
 def main():
-    # Initialize the video capture
+    # Initialize the video capture #
     video_capture = camera.initialize_video_capture()
 
-    # Run the main loop
+    # Run the main loop #
     loop.run_main_loop(video_capture)
 
-    # Release the video capture and close the window
+    # Release the video capture and close the window #
     camera.release_video_capture(video_capture)
     cv2.destroyAllWindows()
 
